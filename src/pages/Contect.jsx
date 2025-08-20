@@ -31,7 +31,7 @@ const Contact = () => {
     setResponse("");
     
     try {
-      const response = await fetch('http://localhost:5000/message', {
+      const response = await fetch('https://portfolio-backend-6xz9.onrender.com/message', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message })
