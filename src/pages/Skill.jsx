@@ -19,14 +19,14 @@ const Skill = () => {
   ];
 
   return (
-    <div className="p-6 max-w-4xl mx-auto h-96">
+    <div className="p-6 max-w-4xl mx-auto h-96 py-19">
       <h1 className="text-3xl font-bold text-center mb-8">My Skills</h1>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {skills.map((skill, index) => (
           <div 
             key={index} 
-            className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition-transform"
+            className="bg-white/20 p-4 rounded-lg shadow-md flex flex-col items-center hover:scale-105 transition-transform"
           >
             <span className="text-3xl mb-2">{skill.icon}</span>
             <h3 className="text-lg font-medium text-center">{skill.name}</h3>

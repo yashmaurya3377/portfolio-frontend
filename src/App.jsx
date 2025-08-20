@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Project';
 import Skill from './pages/Skill';
 import Contact from './pages/Contect';
+import BubbleBackground from './Components/BubbleBackground';
 
 const pageVariants = {
   initial: {
@@ -46,20 +47,16 @@ const AnimatedPage = ({ children }) => {
 
 function AppRoutes() {
   const location = useLocation();
-  
+
   return (
     <AnimatePresence mode="wait">
+      <BubbleBackground />
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={
-          <AnimatedPage>
-            <Home />
-          </AnimatedPage>  } />
-        <Route path="/about" element={
-          <AnimatedPage>  <About />  </AnimatedPage>  } />
-        <Route path="/projects" element={
-          <AnimatedPage>   <Projects />  </AnimatedPage> } />
-        <Route path="/skills" element={ <AnimatedPage>  <Skill /> </AnimatedPage> } />
-        <Route path="/contact" element={<AnimatedPage><Contact /> </AnimatedPage>  } />
+        <Route path="/" element={<AnimatedPage> <Home /> </AnimatedPage>} />
+        <Route path="/about" element={<AnimatedPage>  <About />  </AnimatedPage>} />
+        <Route path="/projects" element={<AnimatedPage>   <Projects />  </AnimatedPage>} />
+        <Route path="/skills" element={<AnimatedPage>  <Skill /> </AnimatedPage>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
@@ -68,7 +65,7 @@ function AppRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <AppRoutes />
     </BrowserRouter>
   )

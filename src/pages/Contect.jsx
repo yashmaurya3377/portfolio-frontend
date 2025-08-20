@@ -93,7 +93,7 @@ const Contact = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-16 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen bg-amber-500/20 py-16 px-4 sm:px-6 lg:px-8"
       id="contact"
     >
 
@@ -114,7 +114,7 @@ const Contact = () => {
           {/* Contact Information */}
           <motion.div
             variants={itemVariants}
-            className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 sm:p-10 text-white relative overflow-hidden"
+            className="bg-gradient-to-br from-blue-600/30 to-indigo-700/35 rounded-2xl shadow-xl p-8 sm:p-10 text-white relative overflow-hidden"
           >
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
             <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/5 rounded-full"></div>
@@ -197,7 +197,7 @@ const Contact = () => {
           {/* Contact Form */}
           <motion.div
             variants={itemVariants}
-            className="bg-white rounded-2xl shadow-xl p-8 sm:p-10 border border-gray-100"
+            className="bg-white/55 rounded-2xl shadow-xl p-8 sm:p-10 border border-gray-100"
           >
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Send me a message

@@ -33,8 +33,8 @@ const projectList = [
       "Device-agnostic responsive design"
     ],
     tools: ["HTML", "CSS", "Tailwind CSS", "React", "JavaScript"],
-    img: "food-delivery-hub-ten.vercel.app ",
-    demo: " food-delivery-hub-ten.vercel.app",
+    img: "food-delivery-hub-ten.vercel.app",
+    demo: "food-delivery-hub-ten.vercel.app",
     code: "https://github.com/yashmaurya3377/food-delivery",
     status: "Live",
     date: "June 2025",
@@ -138,7 +138,7 @@ const projectList = [
   }
 ];
   return (
-    <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-black/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
