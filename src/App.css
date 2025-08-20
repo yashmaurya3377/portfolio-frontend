@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #0707b0;
+background: linear-gradient(171deg, rgba(7, 7, 176, 1) 24%, rgba(1, 70, 109, 1) 30%, rgba(1, 99, 139, 1) 69%, rgba(1, 105, 145, 1) 77%, rgba(0, 212, 255, 1) 90%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.motion-div {
+  width: 10%;
+}
