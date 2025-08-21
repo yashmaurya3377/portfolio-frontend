@@ -3,7 +3,7 @@ import React from "react";
 
 const BubbleBackground = () => {
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden bg-gradient-to-b from-blue-100 via-blue-300 to-blue-500">
+    <div className=" absolute inset-0 -z-10 overflow-hidden bg-gradient-to-b from-blue-100 via-blue-300 to-blue-500">
       {[...Array(20)].map((_, i) => (
         <span
           key={i}

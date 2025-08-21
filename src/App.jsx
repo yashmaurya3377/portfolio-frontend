@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Project';
 import Skill from './pages/Skill';
-import Contact from './pages/Contect';
+import Contact from './pages/Contact'; // Fixed typo: Contect -> Contact
 import BubbleBackground from './Components/BubbleBackground';
 
 const pageVariants = {
@@ -49,24 +49,30 @@ function AppRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <>
       <BubbleBackground />
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<AnimatedPage> <Home /> </AnimatedPage>} />
-        <Route path="/about" element={<AnimatedPage>  <About />  </AnimatedPage>} />
-        <Route path="/projects" element={<AnimatedPage>   <Projects />  </AnimatedPage>} />
-        <Route path="/skills" element={<AnimatedPage>  <Skill /> </AnimatedPage>} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </AnimatePresence>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<AnimatedPage><Home /></AnimatedPage>} />
+          <Route path="/about" element={<AnimatedPage><About /></AnimatedPage>} />
+          <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
+          <Route path="/skills" element={<AnimatedPage><Skill /></AnimatedPage>} />
+          <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <AppRoutes />
+      <div className="relative min-h-screen">
+        <Navbar />
+        <main className="relative z-10">
+          <AppRoutes />
+        </main>
+      </div>
     </BrowserRouter>
   )
 }

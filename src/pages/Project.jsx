@@ -138,7 +138,7 @@ const projectList = [
   }
 ];
   return (
-    <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-black/30">
+    <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-black/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
@@ -151,9 +151,9 @@ const projectList = [
           {projectList.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-200 dark:border-gray-700"
+              className="bg-white/55 dark:bg-gray-800/20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-200 dark:border-gray-700"
             >
-              <div className="relative h-48 bg-gray-100 dark:bg-gray-700 overflow-hidden">
+              <div className="relative h-48 bg-gray-100/10 dark:bg-gray-700 overflow-hidden">
                 <iframe
                   src={project.img}
                   title={project.title}
