@@ -6,8 +6,9 @@ import Navbar from './Components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Project';
 import Skill from './pages/Skill';
-import Contact from './pages/Contact'; // Fixed typo: Contect -> Contact
+import Contact from './pages/Contact'; 
 import BubbleBackground from './Components/BubbleBackground';
+import Hero from './pages/Hero';
 
 const pageVariants = {
   initial: {
@@ -53,11 +54,8 @@ function AppRoutes() {
       <BubbleBackground />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<AnimatedPage><Home /></AnimatedPage>} />
-          <Route path="/about" element={<AnimatedPage><About /></AnimatedPage>} />
-          <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
-          <Route path="/skills" element={<AnimatedPage><Skill /></AnimatedPage>} />
-          <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
+       
+          <Route path="/" element={<AnimatedPage><Hero /></AnimatedPage>} />
         </Routes>
       </AnimatePresence>
     </>

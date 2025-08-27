@@ -93,7 +93,7 @@ const Contact = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="min-h-screen bg-amber-500/20 py-16 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen bg-amber-400/55 py-16 px-4 sm:px-6 lg:px-8"
       id="contact"
     >
 
